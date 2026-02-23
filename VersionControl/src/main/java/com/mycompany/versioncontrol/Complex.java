@@ -22,6 +22,10 @@ public class Complex {
     }
     
     public static double getRealPart() {
-        
+        return real;
+    }
+    
+    public static double getImaginaryPart() {
+        return imaginary;
     }
 }
