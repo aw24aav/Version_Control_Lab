@@ -9,8 +9,8 @@ package com.mycompany.versioncontrol;
  * @author AWhit
  */
 public class Complex {
-    static double real;
-    static double imaginary;
+    double real;
+    double imaginary;
     
     public Complex(double real, double imaginary) {
         this.real = real;
@@ -21,11 +21,18 @@ public class Complex {
         this.real = real; 
     }
     
-    public static double getRealPart() {
+    public double getRealPart() {
         return real;
     }
     
-    public static double getImaginaryPart() {
+    public double getImaginaryPart() {
         return imaginary;
+    }
+    
+    public Complex add(Complex other) {
+        double new_real = real += other.real;
+        double new_imaginary = imaginary += other.imaginary;
+        Complex new_complex = new Complex(new_real, new_imaginary);
+        return new_complex;
     }
 }
