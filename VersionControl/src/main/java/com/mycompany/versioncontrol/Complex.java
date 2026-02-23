@@ -14,6 +14,14 @@ public class Complex {
     
     public Complex(double real, double imaginary) {
         this.real = real;
-        this.imaginary = imaginary;     
+        this.imaginary = imaginary;  
+    }
+    
+    public Complex(double real) {
+        this.real = real; 
+    }
+    
+    public static double getRealPart() {
+        
     }
 }
